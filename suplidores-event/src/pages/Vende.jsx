@@ -35,15 +35,15 @@ const vende = () => {
           <div className="plan-content">
             <h3>Plan Básico</h3>
             <p className="plan-description">
-              Con este plan puedes publicar hasta 3 servicios con descripción detallada, 
+              Con este plan puedes publicar hasta 3 servicios con descripción detallada y 3 productos con una 
               duración de 30 días:
             </p>
-            <p className="plan-price">$29.99</p>
+            <p className="plan-price">RD$2000</p>
             <ul className="plan-features">
               <li>3 publicaciones de servicios</li>
-              <li>Hasta 8 fotos por servicio</li>
-              <li>Presencia en resultados de búsqueda estándar</li>
-              <li>Contacto directo con clientes</li>
+              <li>3 publicaciones de productos</li>
+              <li>Hasta 8 fotos por servicio y productos</li>
+    
             </ul>
           </div>
           <Link to="/registro" className="plan-button">Elegir »</Link>
@@ -54,7 +54,7 @@ const vende = () => {
             <div className="plan-badge">Más popular</div>
             <h3>Plan Destacado</h3>
             <p className="plan-description">
-              Anuncio con hasta 10 servicios, borde de color llamativo y prioridad 
+              Anuncio con hasta 7 servicios, borde de color llamativo y prioridad 
               en los resultados de búsqueda por 60 días:
             </p>
             <p className="plan-price">$59.99</p>
