@@ -2,7 +2,7 @@
 .navbar {
     background-color: #a3d3fb;
     color: white;
-    padding: 20px 40px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +11,8 @@
     position: sticky;
     top: 0;
     z-index: 50;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    left: 0; /* Alinea al borde izquierdo */
 }
 
 .navbar h1 {
