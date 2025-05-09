@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function navbar() {
   return (
     <nav className="bg-pink-500 text-white p-4 flex justify-between items-center">
-      <h1 className="font-bold text-xl">Evento Perfecto</h1>
+      <h1 className="font-bold text-xl">Évoca</h1>
       <div className="space-x-4">
         <Link to="/" className="hover:underline">Inicio</Link>
         <Link to="/servicios" className="hover:underline">Servicios</Link>
@@ -15,4 +15,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;
