@@ -109,12 +109,6 @@ const vende = () => {
           </div>
           
           <div className="benefit-item">
-            <div className="benefit-icon">📱</div>
-            <h3>100% Responsive</h3>
-            <p>Tus servicios se verán perfectamente en cualquier dispositivo</p>
-          </div>
-          
-          <div className="benefit-item">
             <div className="benefit-icon">📊</div>
             <h3>Estadísticas detalladas</h3>
             <p>Conoce el rendimiento de tus anuncios y optimiza tu estrategia</p>

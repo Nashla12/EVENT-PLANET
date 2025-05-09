@@ -9,6 +9,11 @@ import Productos from './pages/Productos';
 import Vende from './pages/Vende';
 import Login from './pages/Login';
 import './index.css';
+import './vende.css';
+import './navbar.css';
+
+
+
 
 function App() {
   return (
