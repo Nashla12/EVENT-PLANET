@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 import Productos from './pages/Productos';
@@ -6,6 +7,7 @@ import Vende from './pages/Vende';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
