@@ -54,17 +54,15 @@ const vende = () => {
             <div className="plan-badge">Más popular</div>
             <h3>Plan Destacado</h3>
             <p className="plan-description">
-              Anuncio con hasta 7 servicios, borde de color llamativo y prioridad 
-              en los resultados de búsqueda por 60 días:
+              Anuncio con hasta 6 servicios, con descripción detallada y 7 productos con una duración de 60 días:
             </p>
-            <p className="plan-price">$59.99</p>
+            <p className="plan-price">$4000</p>
             <ul className="plan-features">
-              <li>10 publicaciones de servicios</li>
-              <li>Hasta 15 fotos por servicio</li>
+              <li>6 publicaciones de servicios</li>
+              <li>7 publicaciones de productos</li>
+              <li>Hasta 15 fotos por servicio y productos </li>
               <li>Posición destacada en resultados de búsqueda por 7 días</li>
               <li>25% más de visibilidad que el plan básico</li>
-              <li>Estadísticas de visitas a tu perfil</li>
-              <li>Contacto directo con clientes</li>
             </ul>
           </div>
           <Link to="/registro" className="plan-button">Elegir »</Link>
@@ -77,15 +75,14 @@ const vende = () => {
               Máxima visibilidad para tu negocio, incluye portada en página principal, 
               destacado permanente por 90 días:
             </p>
-            <p className="plan-price">$99.99</p>
+            <p className="plan-price">8000</p>
             <ul className="plan-features">
-              <li>Publicaciones ilimitadas de servicios</li>
-              <li>Hasta 25 fotos por servicio</li>
+              <li>Publicaciones ilimitadas de servicios y productos </li>
+              <li>Hasta 25 fotos por servicio y productos </li>
               <li>Aparición en portada por 15 días + destacado permanente</li>
               <li>Posición premium en resultados de búsqueda</li>
               <li>Badge verificado en tu perfil</li>
               <li>Estadísticas avanzadas de visitas y contactos</li>
-              <li>Asistencia prioritaria</li>
             </ul>
           </div>
           <Link to="/registro" className="plan-button">Elegir »</Link>
