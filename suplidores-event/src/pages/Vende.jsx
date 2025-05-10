@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const vende = () => {
   return (
     <div className="vende-container">
@@ -43,10 +42,9 @@ const vende = () => {
               <li>3 publicaciones de servicios</li>
               <li>3 publicaciones de productos</li>
               <li>Hasta 8 fotos por servicio y productos</li>
-    
             </ul>
           </div>
-          <Link to="/registro" className="plan-button">Elegir »</Link>
+          <Link to="/registro/basico" className="plan-button">Elegir »</Link>
         </div>
 
         <div className="plan-card highlighted">
@@ -65,7 +63,7 @@ const vende = () => {
               <li>25% más de visibilidad que el plan básico</li>
             </ul>
           </div>
-          <Link to="/registro" className="plan-button">Elegir »</Link>
+          <Link to="/registro/destacado" className="plan-button">Elegir »</Link>
         </div>
 
         <div className="plan-card">
@@ -85,26 +83,26 @@ const vende = () => {
               <li>Estadísticas avanzadas de visitas y contactos</li>
             </ul>
           </div>
-          <Link to="/registro" className="plan-button">Elegir »</Link>
+          <Link to="/registro/premium" className="plan-button">Elegir »</Link>
         </div>
       </div>
 
       <div className="vende-benefits">
         <h2>¿Por qué registrar tu servicio con nosotros?</h2>
-        
+
         <div className="benefits-grid">
           <div className="benefit-item">
             <div className="benefit-icon">🎯</div>
             <h3>Mayor visibilidad</h3>
             <p>Llega a clientes que están buscando específicamente tus servicios para sus eventos</p>
           </div>
-          
+
           <div className="benefit-item">
             <div className="benefit-icon">💼</div>
             <h3>Gestión sencilla</h3>
             <p>Panel de control fácil de usar para administrar tus publicaciones y contactos</p>
           </div>
-          
+
           <div className="benefit-item">
             <div className="benefit-icon">📊</div>
             <h3>Estadísticas detalladas</h3>
@@ -115,7 +113,7 @@ const vende = () => {
 
       <div className="vende-testimonials">
         <h2>Lo que dicen nuestros proveedores</h2>
-        
+
         <div className="testimonials-container">
           <div className="testimonial-card">
             <p className="testimonial-text">
@@ -127,7 +125,7 @@ const vende = () => {
               <p className="author-business">Delicias Catering</p>
             </div>
           </div>
-          
+
           <div className="testimonial-card">
             <p className="testimonial-text">
               "Como fotógrafo de eventos, necesitaba una forma de llegar a más clientes. 
@@ -144,12 +142,12 @@ const vende = () => {
       <div className="vende-cta">
         <h2>¿Listo para impulsar tu negocio de eventos?</h2>
         <p>Únete a cientos de proveedores que ya están aprovechando nuestra plataforma</p>
-        <Link to="/registro" className="cta-button">Registra tu servicio ahora</Link>
+        <Link to="/registro/basico" className="cta-button">Registra tu servicio ahora</Link>
       </div>
 
       <div className="vende-faq">
         <h2>Preguntas frecuentes</h2>
-        
+
         <div className="faq-item">
           <h3>¿Cómo funciona el proceso de registro?</h3>
           <p>
@@ -158,7 +156,7 @@ const vende = () => {
             a publicar tus servicios.
           </p>
         </div>
-        
+
         <div className="faq-item">
           <h3>¿Puedo cambiar de plan más adelante?</h3>
           <p>
@@ -166,7 +164,7 @@ const vende = () => {
             proporcionalmente al tiempo restante de tu membresía actual.
           </p>
         </div>
-        
+
         <div className="faq-item">
           <h3>¿Qué pasa cuando mi membresía expire?</h3>
           <p>

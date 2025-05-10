@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom'; // 👈 AÑADIDO useNavigate
 
-const DatosPersonas = ({ onNext }) => {
+const DatosPersonas = () => {
+  const { plan } = useParams();
+  const navigate = useNavigate(); // 👈 AÑADIDO
+
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
     telefono: '',
     direccion: '',
-    email: ''
+    email: '',
+    planSeleccionado: plan
   });
 
   const handleChange = (e) => {
@@ -20,16 +25,14 @@ const DatosPersonas = ({ onNext }) => {
     e.preventDefault();
     console.log('Datos ingresados:', formData);
 
-    // Aquí puedes conectar al backend más adelante
-    // Por ahora solo pasa al siguiente paso
-    if (onNext) {
-      onNext();
-    }
+    // navega al siguiente formulario
+    navigate('/registro/evento', { state: { formData } }); // 👈 NUEVO
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Información Personal</h2>
+      <h2>Datos</h2>
+      <p><strong>Plan seleccionado:</strong> {plan}</p>
 
       <label>
         Nombre:
