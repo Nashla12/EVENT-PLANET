@@ -1,23 +1,21 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import "./home.css";
 import "./index.css";
 import "./navbar.css";
+import "./vende.css";
 import "./Formularios/datos.css";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Productos from "./pages/Productos";
 import Servicios from "./pages/Servicios";
 import Vende from "./pages/Vende";
 import DatosPersonas from "./Formularios/datospersonas";
-import DatosEvento from "./Formularios/datosevento"; 
-import Confirmacion from "./Formularios/confirmacion";
-import "./vende.css"
-
- 
-
+import DatosProveedor from "./Formularios/datosproveedor";
 
 function App() {
   return (
@@ -32,8 +30,7 @@ function App() {
             <Route path="/vende" element={<Vende />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro/:plan" element={<DatosPersonas />} />
-             <Route path="/registro/evento" element={<DatosEvento />} />
-            <Route path="/registro/confirmacion" element={<Confirmacion />} />
+            <Route path="/registro/evento" element={<DatosProveedor />} />
           </Routes>
         </main>
         <Footer />
@@ -43,3 +40,4 @@ function App() {
 }
 
 export default App;
+
