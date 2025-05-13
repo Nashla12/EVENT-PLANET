@@ -9,10 +9,14 @@ import "./Formularios/datos.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+
+
+
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Productos from "./pages/Productos";
-import Servicios from "./pages/Servicios";
+import Servicios from "./pages/servicios";
 import Vende from "./pages/Vende";
 import DatosPersonas from "./Formularios/datospersonas";
 import DatosProveedor from "./Formularios/datosproveedor";
@@ -31,6 +35,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registro/:plan" element={<DatosPersonas />} />
             <Route path="/registro/evento" element={<DatosProveedor />} />
+        
           </Routes>
         </main>
         <Footer />
