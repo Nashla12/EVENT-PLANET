@@ -7,7 +7,7 @@ import {
   Star,
   Users,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // Colores de la nueva paleta
 const colors = {
@@ -134,21 +134,17 @@ const ProveedorCard = ({ proveedor }) => {
 
 // Componente principal de la página de inicio
 export default function Home() {
-  const [setIsScrolled] = useState(false);
-
   // Efecto para detectar el scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+        // Add any functionality here if needed in the future
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []); // Asegúrate de que el array de dependencias esté vacío o contenga las dependencias necesarias
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
