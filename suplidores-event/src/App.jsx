@@ -6,7 +6,7 @@ import "./index.css";
 import "./navbar.css";
 import "./vende.css";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -16,8 +16,6 @@ import Productos from "./pages/Productos";
 import Servicios from "./pages/servicios";
 import Vende from "./pages/Vende";
 
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -26,6 +24,7 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
+            <Route path ="/navbar" element={<Navbar />} />
             <Route path="/home" element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/productos" element={<Productos />} />
