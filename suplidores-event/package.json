@@ -4,12 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node src/server.js",
-    "client": "vite"
+    "preview": "vite preview"
   },
   "dependencies": {
     "cors": "^2.8.5",
