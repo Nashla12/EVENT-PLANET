@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import "./Formularios/datos.css";
 import "./home.css";
 import "./index.css";
 import "./navbar.css";
 import "./vende.css";
-import "./Formularios/datos.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Perfil from "./pages/Perfil";
 import Productos from "./pages/Productos";
-import Servicios from "./pages/Servicios";
+import Servicios from "./pages/servicios";
 import Vende from "./pages/Vende";
-import DatosPersonas from "./Formularios/datospersonas";
-import DatosProveedor from "./Formularios/datosproveedor";
+
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/productos" element={<Productos />} />
             <Route path="/vende" element={<Vende />} />
@@ -40,4 +42,3 @@ function App() {
 }
 
 export default App;
-
